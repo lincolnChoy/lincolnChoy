@@ -8,12 +8,35 @@ import Mail from './svg/mail'
 import Person from './svg/person'
 import Projects from './svg/projects'
 import Skills from './svg/skills'
+import Menu from './svg/menu'
+import CloseMenu from './svg/backarrow'
 
 class Header extends React.Component {
+  state = {
+    menuOpen: false
+  }
+
+  componentDidUpdate = () => {
+    window.addEventListener('resize', this.resetMenu)
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.resetMenu)
+  }
+
+  resetMenu = () => {
+    if (window.innerWidth > 800 && this.state.menuOpen) {
+      this.setState({ menuOpen: false })
+    }
+  }
+
   render() {
     return (
-      <div className="app-header">
-        <div>
+      <div className={cx({
+        "app-header": true,
+        "menu-open": this.state.menuOpen
+      })}>
+        <div className="icon-container">
           <div className={cx({
             "icon-wrapper": true,
             "active-icon": this.props.activeRoute === 'home'
@@ -44,7 +67,16 @@ class Header extends React.Component {
           </div>
         </div>
 
-        <div className="social-media">
+        <div className="menu-icon" onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
+          {
+            this.state.menuOpen ? 
+              <CloseMenu />
+              :
+              <Menu />
+          }
+        </div>
+
+        <div className="icon-container social-media">
           <div className="icon-wrapper">
             <a href="https://github.com/lincolnChoy">
               <GitHubLogo />

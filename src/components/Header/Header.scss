@@ -6,9 +6,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transition: 0.33s ease-in-out;
+
+  .icon-container {
+    transition: 0.33s ease-in-out;
+  }
 
   .social-media {
     margin-bottom: 2rem;
+  }
+
+  .menu-icon {
+    position: absolute;
+    left: -2.75rem;
+    top: 50%;
+    transition: 0.33s ease-in-out;
+
+    svg {
+      width: 40px;
+
+      path, line, rect, polyline {
+        fill: none;
+        stroke: white;
+        stroke-width: 15px;
+        stroke-linejoin: round;
+      }
+    }
   }
 
   .icon-wrapper {
@@ -43,5 +66,42 @@
         stroke: greenyellow;
       }
     }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .app-header {
+    width: 2rem;
+    transition: 0.33s ease-in-out;
+
+    .icon-container {
+      transform: translateX(-100%);
+
+      .icon-wrapper {
+        margin-top: 1.8rem;
+
+        svg {
+          width: 30px;
+        }
+      }
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      transform: translateX(100%);
+    }
+  }
+}
+
+.menu-open{
+  width: 3.8rem;
+
+  .icon-container {
+    transform: translateX(0);
+  }
+
+  .menu-icon {
+    left: -0.8rem;
   }
 }
