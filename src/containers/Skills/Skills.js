@@ -5,8 +5,9 @@ class Skills extends React.Component {
   render() {
     return (
       <div className="wrapper skills-wrapper scene_element scene_element--fadeinright">
-        <h1>Skills</h1>
-        <p></p>
+        <div className="text-section">
+          <h1>Skills & Experience</h1>
+        </div>
       </div>
     )
   }

@@ -1,5 +1,5 @@
 .app-header {
-  background-color: #222;
+  background-color: #111;
   width: 3.8rem;
   height: 100vh;
   display: flex;
@@ -40,7 +40,7 @@
     transition: all .2s ease-in-out;
 
     svg {
-      width: 40px;
+      width: 35px;
 
       path, line, rect, polyline {
         fill: none;
@@ -55,7 +55,7 @@
 
       path, line, rect, polyline {
         transition: 1s;
-        stroke: greenyellow;
+        stroke: lightskyblue;
       }
     }
   }
@@ -63,7 +63,7 @@
   .active-icon {
     svg {
       path, line, rect, polyline {
-        stroke: greenyellow;
+        stroke: lightskyblue;
       }
     }
   }

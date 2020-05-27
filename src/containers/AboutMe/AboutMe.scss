@@ -5,15 +5,45 @@
   justify-content: flex-start;
 
   .text-section {
-    margin: 8rem 0 0 5rem;
+    margin: 8rem 0 0 8rem;
     width: 40%;
 
+    h1 {
+      color: lightskyblue;
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+      animation-name: rubberBandWordUp;
+    }
+
+    @media (max-width: 1600px) {
+      width: 54%;
+    }
+
+    @media (max-width: 1400px) {
+      width: 57%;
+    }
+
+    @media (max-width: 1200px) {
+      width: 65%;
+    }
+
     @media (max-width: 1000px) {
-      width: 50%;
+      margin-top: 3rem;
     }
 
     @media (max-width: 800px) {
-      width: 60%;
+      margin-left: 5rem;
+      width: 73%;
+    }
+
+    @media (max-width: 600px) {
+      margin: 2rem 0 0 3rem;
+      width: 80%;
+    }
+
+    @media (max-width: 400px) {
+      margin-left: 1.5rem;
     }
   }
 }
