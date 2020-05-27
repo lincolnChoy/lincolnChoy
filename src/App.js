@@ -1,27 +1,35 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import particles from './particles'
 import './App.css'
 import Header from './components/Header/Header'
+import AboutMe from './containers/AboutMe/AboutMe'
 import Home from './containers/Home/Home'
+import particles from './particles'
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      route: 'home'
+      activeRoute: 'home'
     }
+  }
+
+  routeTo = (activeRoute) => {
+    this.setState({ activeRoute })
   }
 
   render() {
     let mainContent
 
-    switch(this.state) {
+    switch(this.state.route) {
       case 'home':
-        mainContent = <Home />
+        mainContent = <Home routeTo={this.routeTo}/>
+        break
+      case 'about-me':
+        mainContent = <AboutMe />
         break
       default:
-        mainContent = <Home />
+        mainContent = <Home routeTo={this.routeTo}/>
         break
     }
 
@@ -29,7 +37,7 @@ class App extends React.Component {
       <div className="container">
           <Particles canvasClassName="particles" params={particles}/>
         <div className="page-wrapper">
-          <Header />
+          <Header activeRoute={this.state.activeRoute} routeTo={this.routeTo}/>
           {mainContent}
         </div>
       </div>

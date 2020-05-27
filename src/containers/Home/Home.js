@@ -47,7 +47,7 @@ class Home extends React.Component {
             <h1>{this.getDescriptionOne()}</h1>
             <h1>{this.getDescriptionTwo()}</h1>
         </div>
-        <div className="learn-more-container">
+        <div className="learn-more-container" onClick={() => this.props.routeTo('about-me')}>
           <p>Learn more about me!</p>
         </div>
       </div>

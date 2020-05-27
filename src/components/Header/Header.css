@@ -14,6 +14,10 @@
   transition: all .2s ease-in-out;
 }
 
+.app-header .active-icon path, .active-icon line, .active-icon rect, .active-icon polyline {
+  stroke: greenyellow;
+}
+
 .app-header .icon-wrapper:hover {
   transform: scale(1.15);
 }
