@@ -40,13 +40,10 @@ class App extends React.Component {
     }
 
     return (
-      <div className="container">
-        <div className="page-wrapper m-scene">
-          <Header activeRoute={this.state.activeRoute} routeTo={this.routeTo}/>
-          {mainContent}
-        </div>
+      <div className="page-wrapper m-scene">
+        <Header activeRoute={this.state.activeRoute} routeTo={this.routeTo}/>
+        {mainContent}
       </div>
-   
     );
   }
 }

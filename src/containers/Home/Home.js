@@ -22,7 +22,7 @@ class Home extends React.Component {
             <h1>{this.getSpanArray("Aspiring game developer")}</h1>
         </div>
         <div className="learn-more-container" onClick={() => this.props.routeTo('about-me')}>
-          <p>Learn more about me!</p>
+          <span>Learn more about me!</span>
         </div>
       </div>
     )

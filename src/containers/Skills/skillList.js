@@ -32,7 +32,7 @@ export default [
     value: 70
   },
   {
-    skill: 'Software testing - Jest, Selenium',
+    skill: 'Testing - Jest, Selenium',
     value: 70
   },
   {

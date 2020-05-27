@@ -1,5 +1,11 @@
+#root {
+  margin:0;
+  height: 100vh;
+}
+
 body {
   margin: 0;
+  height: 100%;
   font-family: OpenSans, 'Segoe UI';
   background-color: #222;
   color: white;
