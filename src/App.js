@@ -1,10 +1,8 @@
 import React from 'react'
-import Particles from 'react-particles-js'
 import './App.css'
 import Header from './components/Header/Header'
 import AboutMe from './containers/AboutMe/AboutMe'
 import Home from './containers/Home/Home'
-import particles from './particles'
 
 class App extends React.Component {
   constructor() {
@@ -21,7 +19,7 @@ class App extends React.Component {
   render() {
     let mainContent
 
-    switch(this.state.route) {
+    switch(this.state.activeRoute) {
       case 'home':
         mainContent = <Home routeTo={this.routeTo}/>
         break
@@ -35,8 +33,7 @@ class App extends React.Component {
 
     return (
       <div className="container">
-          <Particles canvasClassName="particles" params={particles}/>
-        <div className="page-wrapper">
+        <div className="page-wrapper m-scene">
           <Header activeRoute={this.state.activeRoute} routeTo={this.routeTo}/>
           {mainContent}
         </div>

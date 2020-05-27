@@ -2,50 +2,24 @@ import React from 'react'
 import './Home.css'
 
 class Home extends React.Component {
-  getName = () => {
-    const name = "Lincoln Choy"
-    
+  getSpanArray = (text) => {
     let content = []
 
-    for (let i = 0; i < name.length; i++) {
-      content.push(<span>{name[i]}</span>)
+    for (let i = 0; i < text.length; i++) {
+      content.push(<span>{text[i]}</span>)
     }
 
     return content
   }
-
-  getDescriptionOne = () => {
-    const description = "Web developer |"
-    
-    let content = []
-
-    for (let i = 0; i < description.length; i++) {
-      content.push(<span>{description[i]}</span>)
-    }
-
-    return content
-  }
-
-  getDescriptionTwo = () => {
-    const description = "Aspiring game developer"
-    
-    let content = []
-
-    for (let i = 0; i < description.length; i++) {
-      content.push(<span>{description[i]}</span>)
-    }
-
-    return content
-  }
-
 
   render() {
     return (
-      <div className="home-wrapper">
+      <div className="home-wrapper scene_element scene_element--fadeinright">
         <div className="description-container">
-            <h1>{this.getName()}</h1>
-            <h1>{this.getDescriptionOne()}</h1>
-            <h1>{this.getDescriptionTwo()}</h1>
+            <h1>{this.getSpanArray("Hi,")}</h1>
+            <h1>{this.getSpanArray("I’m Lincoln,")}</h1>
+            <h1>{this.getSpanArray("Web developer |")}</h1>
+            <h1>{this.getSpanArray("Aspiring game developer")}</h1>
         </div>
         <div className="learn-more-container" onClick={() => this.props.routeTo('about-me')}>
           <p>Learn more about me!</p>
