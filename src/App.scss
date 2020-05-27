@@ -6,6 +6,29 @@
   -moz-user-select: none; 
   -ms-user-select: none;
   user-select: none;
+
+  .wrapper {
+    h1 {
+      font-family: TitilliumWeb;
+      font-size: 3rem;
+
+      @media (max-width: 1200px) {
+        font-size: 2.5rem;
+      }
+    
+      @media (max-width: 800px) {
+        font-size: 2.0rem;
+      }
+    
+      @media (max-width: 600px) {
+        font-size: 1.6rem;
+      }
+    
+      @media (max-width: 400px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
 }
 
 .m-scene .scene_element {
@@ -20,6 +43,10 @@
 
 .m-scene .scene_element--fadeinup {
 	animation-name: fadeInUp;
+}
+
+.m-scene .scene_element--fadeindown {
+	animation-name: fadeInDown;
 }
 
 .m-scene .scene_element--fadeinright {
@@ -48,6 +75,17 @@
   }
 }
 
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 @keyframes fadeInRight {
   0% {

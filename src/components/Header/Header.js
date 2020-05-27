@@ -1,11 +1,10 @@
+import cx from 'classnames'
 import React from 'react'
 import './Header.css'
 import Home from './svg/home'
-import Mail from './svg/mail'
 import Person from './svg/person'
 import Projects from './svg/projects'
 import Skills from './svg/skills'
-import cx from 'classnames'
 
 class Header extends React.Component {
   render() {
@@ -38,13 +37,6 @@ class Header extends React.Component {
         })} 
           onClick={() => this.props.routeTo('projects')}>
           <Projects />
-        </div>
-        <div className={cx({
-          "icon-wrapper": true,
-          "active-icon": this.props.activeRoute === 'contact-me'
-        })} 
-          onClick={() => this.props.routeTo('contact-me')}>
-          <Mail />
         </div>
       </div>
     )
