@@ -4,7 +4,7 @@ import './Skills.scss'
 class Skills extends React.Component {
   render() {
     return (
-      <div className="wrapper skills-wrapper scene_element scene_element--fadeindown">
+      <div className="wrapper skills-wrapper scene_element scene_element--fadeinright">
         <h1>Skills</h1>
         <p></p>
       </div>
