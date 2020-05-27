@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import './Home.scss'
 
 class Home extends React.Component {
   getSpanArray = (text) => {
@@ -14,7 +14,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="home-wrapper scene_element scene_element--fadeinright">
+      <div className="wrapper home-wrapper scene_element scene_element--fadeinright">
         <div className="description-container">
             <h1>{this.getSpanArray("Hi,")}</h1>
             <h1>{this.getSpanArray("I’m Lincoln,")}</h1>
