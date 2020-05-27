@@ -1,5 +1,4 @@
 .app-header {
-  position: fixed;
   background-color: #222;
   width: 3.8rem;
   height: 100vh;
@@ -10,9 +9,13 @@
 }
 
 .app-header .icon-wrapper {
-  margin-top: 2rem;
+  margin-top: 3rem;
   cursor: pointer;
   transition: all .2s ease-in-out;
+}
+
+.app-header .active-icon path, .active-icon line, .active-icon rect, .active-icon polyline {
+  stroke: greenyellow;
 }
 
 .app-header .icon-wrapper:hover {

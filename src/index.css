@@ -5,11 +5,17 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 @font-face {
   font-family: OpenSans;
   src: url("./assets/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url("./assets/TitilliumWeb.ttf");
 }
 
 code {
