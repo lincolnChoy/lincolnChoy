@@ -1,13 +1,12 @@
 import React from 'react'
 import './Header.css'
-import Home from './svg/Home'
+import Home from './svg/home'
 import Mail from './svg/mail'
 import Person from './svg/person'
 import Projects from './svg/projects'
 import Skills from './svg/skills'
 
 class Header extends React.Component {
-
   render() {
     return (
       <div className="app-header">
@@ -31,4 +30,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default Header
