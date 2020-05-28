@@ -8,7 +8,7 @@ class ExperienceBar extends React.Component {
 
     return (
       <div className="experience-bar">
-        <div className="skill-name">{skill}</div>
+        <div className="skill-name"><span>{skill}</span></div>
         <div className="skill-meter">
           <div className="skill-value" style={{width: `${value}%`}}></div>
         </div>

@@ -45,7 +45,7 @@ export default [
         }],
         status: "Complete",
         screenshots: [],
-        brief: "A VHDL implementation of a classic arcade game, Pong."
+        brief: "This portfolio website is also something I made myself."
     },
     {
         name: "Pacamana Jones",
@@ -101,7 +101,7 @@ export default [
         brief: "A hybrid P2P/central server social network application."
     },
     {
-        name: "Pong",
+        name: "Pong game",
         description: "University project. A VHDL implementation of a classic arcade game, Pong. Developed with fellow student Henry Shen.",
         thumbnail: "https://i.imgur.com/JDEgafj.png",
         features: ["Developed in a hardware description language."],

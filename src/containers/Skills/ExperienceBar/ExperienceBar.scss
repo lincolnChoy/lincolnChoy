@@ -5,11 +5,20 @@
   margin-top: 1rem;
 
   .skill-name {
-    width: 28%;
+    width: 25%;
+    background-color: rgb(15, 124, 167);
+    
+    span {
+      padding-left: 1rem;
+
+      @media (max-width: 670px) {
+        font-size: 0.83rem;
+      }
+    }
   }
 
   .skill-meter {
-    width: 72%;
+    width: 75%;
     height: 2rem;
     background-color: white;
 
@@ -21,6 +30,16 @@
       animation-name: fillExp;
       height: 100%;
       background-color: skyblue;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .skill-name {
+      width: 28%;
+    }
+
+    .skill-meter {
+      width: 72%;
     }
   }
 }

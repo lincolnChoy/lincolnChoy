@@ -11,7 +11,10 @@ class ProjectCard extends React.Component {
           <h2>{project.name}</h2>
         </div>
         <div className="project-card-layer-2">
-          <button>Learn more</button>
+          <div className="content-wrapper">
+            <h3>{project.brief}</h3>
+            <button>Learn more</button>
+          </div>
         </div>
       </div>
     )
