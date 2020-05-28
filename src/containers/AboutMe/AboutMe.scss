@@ -17,11 +17,12 @@
     }
 
     @media (max-width: 1600px) {
-      margin: 4.5rem 0 0 6rem;
+      margin: 4.5rem 0 0 7rem;
       width: 54%;
     }
 
     @media (max-width: 1400px) {
+      margin: 3rem 0 0 6rem;
       width: 57%;
     }
 
@@ -34,17 +35,12 @@
     }
 
     @media (max-width: 800px) {
-      margin-left: 5rem;
+      margin: 2rem 0 0 3.5rem;
       width: 73%;
     }
 
     @media (max-width: 600px) {
-      margin: 2rem 0 0 3rem;
       width: 80%;
-    }
-
-    @media (max-width: 400px) {
-      margin-left: 1.5rem;
     }
   }
 }
