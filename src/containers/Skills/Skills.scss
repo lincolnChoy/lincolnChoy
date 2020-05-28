@@ -44,21 +44,11 @@
       margin: 3rem 0 0 6rem;
     }
 
-    @media (max-width: 800px) {
-      margin-left: 5rem;
-      width: 73%;
-    }
-
-    @media (max-width: 600px) {
-      margin: 2rem 0 0 3rem;
-      width: 80%;
-    }
-
     @media (max-width: 1200px) {
       .sub-content-container {
         flex-direction: column;
         .text-section {
-          width: 95%;
+          display: none;
         }
 
         .graph-section {
@@ -70,6 +60,16 @@
           }
         }
       }
+    }
+
+    @media (max-width: 800px) {
+      margin-left: 4rem;
+      width: 73%;
+    }
+
+    @media (max-width: 600px) {
+      margin: 2rem 0 0 1.5rem;
+      width: 80%;
     }
   }
 }

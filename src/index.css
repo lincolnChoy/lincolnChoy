@@ -5,12 +5,12 @@
 
 body {
   margin: 0;
-  height: 100%;
   font-family: OpenSans, 'Segoe UI';
   background-color: #222;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
   overflow: hidden;
 }
 
