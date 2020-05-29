@@ -67,7 +67,7 @@ export default [
     {
         name: "SwimmyFishy",
         description: "A spin-off on the classic FlappyBird game developed on Android. Developed with fellow student Henry Shen.",
-        thumbnail: "https://i.imgur.com/JDEgafj.png",
+        thumbnail: "https://camo.githubusercontent.com/e3d01556f298612d863e89844a3fa35aea35a337/68747470733a2f2f692e696d6775722e636f6d2f486e64676146642e706e67",
         features: ["Developed in Java.", "All visual assets were self made."],
         tools: [
             "Android Studio",

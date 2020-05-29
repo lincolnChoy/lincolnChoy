@@ -11,17 +11,18 @@
     flex-direction: column;
 
     h1 {
-      color: lightskyblue;
-      animation-duration: 1.5s;
-      animation-fill-mode: both;
-      animation-iteration-count: 1;
-      animation-name: rubberBandWordRight;
+      // animation-duration: 1.5s;
+      // animation-fill-mode: both;
+      // animation-iteration-count: 1;
+      // animation-name: rubberBandWordRight;
     }
 
     .sub-content-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      padding-top: 1rem;
 
       .text-section {
         width: 40%;
@@ -32,7 +33,7 @@
           text-align: center;
         }
         padding-bottom: 1rem;
-        width: 55%;
+        width: 45%;
       }
     }
 
@@ -47,8 +48,10 @@
     @media (max-width: 1200px) {
       .sub-content-container {
         flex-direction: column;
+        justify-content: flex-start;
         .text-section {
-          display: none;
+          // display: none;
+          width: 95%;
         }
 
         .graph-section {

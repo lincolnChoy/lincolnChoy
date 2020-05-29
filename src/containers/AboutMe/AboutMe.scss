@@ -9,11 +9,15 @@
     width: 40%;
 
     h1 {
-      color: lightskyblue;
-      animation-duration: 1.5s;
-      animation-fill-mode: both;
-      animation-iteration-count: 1;
-      animation-name: rubberBandWordUp;
+      // animation-duration: 1.5s;
+      // animation-fill-mode: both;
+      // animation-iteration-count: 1;
+      // animation-name: rubberBandWordUp;
+    }
+
+    .description-container {
+      padding-top: 1rem;
+      width: 95%;
     }
 
     @media (max-width: 1600px) {

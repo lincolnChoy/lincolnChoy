@@ -18,11 +18,6 @@ body {
   src: url("./assets/OpenSans-Regular.ttf");
 }
 
-@font-face {
-  font-family: TitilliumWeb;
-  src: url("./assets/TitilliumWeb.ttf");
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -32,10 +32,6 @@
 
   .wrapper {
     height: 100%;
-
-    h1, h2, h3 {
-      font-family: TitilliumWeb;
-    }
     
     h1 {
       font-size: 3.3rem;
@@ -55,10 +51,13 @@
       @media (max-width: 400px) {
         font-size: 1.5rem;
       }
+
+      @media (max-width: 350px) {
+        font-size: 1.3rem;
+      }
     }
 
     p {
-      font-family: OpenSans;
       font-size: 1.2rem;
     
       @media (max-width: 800px) {
@@ -71,6 +70,24 @@
 
       @media (max-width: 600px) {
         font-size: 0.9rem;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .bounce {
+      display: inline-block;
+      font-weight: lighter;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+      white-space: pre;
+
+      &:hover {
+        animation-name: rubberBand;
+        color: lightskyblue;
       }
     }
   }

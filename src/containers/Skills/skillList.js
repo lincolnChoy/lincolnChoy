@@ -32,7 +32,7 @@ export default [
     value: 70
   },
   {
-    skill: 'Jest, Selenium',
+    skill: 'Jest',
     value: 70
   },
   {

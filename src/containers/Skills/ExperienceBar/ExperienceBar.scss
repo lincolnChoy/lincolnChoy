@@ -42,6 +42,14 @@
       width: 72%;
     }
   }
+
+  @media (max-width: 400px) {
+    .skill-name {
+      span {
+        padding-left: 0.5rem;
+      }
+    }
+  }
 }
 
 @keyframes fillExp {

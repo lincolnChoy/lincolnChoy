@@ -1,25 +1,16 @@
 import React from 'react'
+import { getSpanArray } from '../../utility'
 import './Home.scss'
 
 class Home extends React.Component {
-  getSpanArray = (text) => {
-    let content = []
-
-    for (let i = 0; i < text.length; i++) {
-      content.push(<span>{text[i]}</span>)
-    }
-
-    return content
-  }
-
   render() {
     return (
       <div className="wrapper home-wrapper scene_element scene_element--fadeinright">
         <div className="description-container">
-            <h1>{this.getSpanArray("Hi,")}</h1>
-            <h1>{this.getSpanArray("I’m Lincoln,")}</h1>
-            <h1>{this.getSpanArray("Web developer |")}</h1>
-            <h1>{this.getSpanArray("Aspiring game developer")}</h1>
+            <h1>{getSpanArray("Hi,")}</h1>
+            <h1>{getSpanArray("I’m Lincoln,")}</h1>
+            <h1>{getSpanArray("Web developer |")}</h1>
+            <h1>{getSpanArray("Aspiring game developer")}</h1>
         </div>
         <div className="learn-more-container" onClick={() => this.props.routeTo('about-me')}>
           <span>Learn more about me!</span>
