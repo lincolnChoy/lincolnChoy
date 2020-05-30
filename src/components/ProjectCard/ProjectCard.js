@@ -9,7 +9,7 @@ class ProjectCard extends React.Component {
       <div className="project-card">
         <div className="project-card-layer-1">
           <h2>{project.name}</h2>
-          <img src={project.thumbnail} />
+          <img src={require(`../../assets/thumbnails/${project.thumbnail}`)} />
         </div>
         <div className="project-card-layer-2">
           <div className="content-wrapper">

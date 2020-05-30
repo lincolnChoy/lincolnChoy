@@ -4,7 +4,7 @@ export default [
         description: 
         `A messenging application developed in Angular, React and React-Native (currently there is a different implementation in each of these frameworks).
         I also built a back-end server for this.`,
-        thumbnail: "https://i.imgur.com/JDEgafj.png",
+        thumbnail: "chime-web.png",
         features: ["Developed across 3 frameworks."],
         tools: ["JavaScript/TypeScript","React, Redux", "Angular, NGRX", "React-Native", "NodeJS", "Express", "PostGreSQL"],
         links: [
@@ -32,15 +32,11 @@ export default [
     {
         name: "lincoln.choy",
         description: "This portfolio website is also something I made myself",
-        thumbnail: "https://i.imgur.com/5xNpcP3.png",
-        features: ["Developed in a hardware description language."],
-        tools: [
-            "VHDL",
-            "Quartus",
-            "Cyclone V FPGA board"
-        ],
+        thumbnail: "portfolio.png",
+        features: ["Developed in React JS."],
+        tools: ["React"],
         links: [{
-            url: "https://github.com/lincolnChoy/Pong-game",
+            url: "https://github.com/lincolnChoy/Portfolio",
             name: "GitHub"
         }],
         status: "Complete",
@@ -53,7 +49,7 @@ export default [
         `University project. A parody of a timeless classic, Pacman. Developed in Java using the JavaFX library with fellow student Henry Shen.
         This version features an Indiana-Jones themed storyline in which the player must collect artifacts and avoid the ghosts in the maze. 
         `,
-        thumbnail: "https://i.imgur.com/JDEgafj.png",
+        thumbnail: "pacman.png",
         features: ["Single-player", "Multi-player", "Desktop application"],
         tools : ["Java", "JavaFX", "Audacity", "Photoshop"],
         links: [{
@@ -67,7 +63,7 @@ export default [
     {
         name: "SwimmyFishy",
         description: "A spin-off on the classic FlappyBird game developed on Android. Developed with fellow student Henry Shen.",
-        thumbnail: "https://camo.githubusercontent.com/e3d01556f298612d863e89844a3fa35aea35a337/68747470733a2f2f692e696d6775722e636f6d2f486e64676146642e706e67",
+        thumbnail: "swimmyfishy.png",
         features: ["Developed in Java.", "All visual assets were self made."],
         tools: [
             "Android Studio",
@@ -86,7 +82,7 @@ export default [
         name: "Social network server",
         description: `University project. A Python hybrid P2P/central server social network application with a login server provided by the lecturer.
         This project inspired me to take up a deeper interest in web development as it was my first web application project.`,
-        thumbnail: "https://i.imgur.com/JDEgafj.png",
+        thumbnail: "chime-web.png",
         features: ["Messaging.", "Profile viewing/editing."],
         tools: [
             "Python",
@@ -103,7 +99,7 @@ export default [
     {
         name: "Pong game",
         description: "University project. A VHDL implementation of a classic arcade game, Pong. Developed with fellow student Henry Shen.",
-        thumbnail: "https://i.imgur.com/JDEgafj.png",
+        thumbnail: "pong.png",
         features: ["Developed in a hardware description language."],
         tools: [
             "VHDL",
