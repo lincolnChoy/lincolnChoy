@@ -2,65 +2,78 @@
   width: 100%;
   margin: 5rem 0 0 8rem;
 
-  .header-content {
-    display: flex;
-    flex-direction: column;
-  }
+  .main-content {
+    width: 75%;
 
-  .icon-wrapper {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+    .header-content {
+      display: flex;
+      flex-direction: column;
+    }
   
-    svg {
+    .icon-wrapper {
       width: 50px;
-  
-      line, polyline {
-        fill: none;
-        stroke: white;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 48px;
+      height: 50px;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+    
+      svg {
+        width: 50px;
+        height: 50px;
+    
+        line, polyline {
+          fill: none;
+          stroke: white;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: 48px;
+        }
+      }
+    
+      &:hover {
+        transform: scale(1.15);
+    
+        path, line, rect, polyline {
+          transition: 1s;
+          stroke: lightskyblue;
+        }
       }
     }
   
-    &:hover {
-      transform: scale(1.15);
-  
-      path, line, rect, polyline {
-        transition: 1s;
-        stroke: lightskyblue;
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    
+      button {
+        margin: 0.3rem;
       }
     }
-  }
 
-  .links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  
-    button {
-      margin: 0.3rem;
+    @media (max-width: 1200px) {
+      width: 80%;
+    }
+
+    @media (max-width: 800px) {
+      width: 88%;
     }
   }
 
   @media (max-width: 1200px) {
     margin-left: 6rem;
-
-
   }
 
   @media (max-width: 800px) {
     margin: 2rem 0 0 3.5rem;
 
-    .icon-wrapper {
-      width: 35px;
-      height: 35px;
-
-      svg {
+    .main-content {
+      .icon-wrapper {
         width: 35px;
         height: 35px;
+  
+        svg {
+          width: 35px;
+          height: 35px;
+        }
       }
     }
   }
@@ -68,13 +81,15 @@
   @media (max-width: 400px) {
     margin-left: 4rem;
 
-    .icon-wrapper {
-      width: 25px;
-      height: 25px;
-
-      svg {
+    .main-content {
+      .icon-wrapper {
         width: 25px;
         height: 25px;
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }

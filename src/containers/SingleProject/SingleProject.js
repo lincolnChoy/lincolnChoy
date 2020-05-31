@@ -4,6 +4,14 @@ import { getSpanArray } from '../../utility';
 import './SingleProject.scss';
 
 class Project extends React.Component {
+  getDescriptions = () => {
+    let content = this.props.project.descriptions.map((description, index) => (
+      <p key={index}>{description}</p>
+    ))
+    
+    return content
+  }
+
   getTools = () => {
     let content = this.props.project.tools.map((tool, index) => (
       <li key={index}>{tool}</li>
@@ -20,25 +28,38 @@ class Project extends React.Component {
     return content
   }
 
+  getScreenshots = () => {
+    let content = this.props.project.screenshots.map((link, index) => (
+      <img key={index} alt="project_img" src={link} />
+    ))
+
+    return content
+  }
+
   render() {
     const { project } = this.props
 
     return (
       <div className="wrapper single-project-wrapper scene_element scene_element--fadeinright">
-        <div className="header-content">
-          <div className="icon-wrapper" onClick={() => this.props.resetProject()}>
-            <BackArrow />
+        <div className="main-content">
+          <div className="header-content">
+            <div className="icon-wrapper" onClick={() => this.props.resetProject()}>
+              <BackArrow />
+            </div>
+            <h1>{getSpanArray(project.name)}</h1>
           </div>
-          <h1>{getSpanArray(project.name)}</h1>
-        </div>
-        <p>{project.description}</p>
+          <p>{this.getDescriptions()}</p>
 
-        <h2>Tools used</h2>
-        <div className="tools">
-          {this.getTools()}
-        </div>
-        <div className="links">
-          {this.getLinks()}
+          <h3>Tools used</h3>
+          <div className="tools">
+            {this.getTools()}
+          </div>
+          <div className="links">
+            {this.getLinks()}
+          </div>
+          <div className="screenshots">
+            {this.getScreenshots()}
+          </div>
         </div>
       </div>
     )

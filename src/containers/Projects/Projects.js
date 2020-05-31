@@ -6,8 +6,8 @@ import './Projects.scss'
 
 class Projects extends React.Component {
   state = {
-    // project: null,
-    project: projectsList[0]
+    project: null
+    // project: projectsList[0]
   }
 
   displayProject = (project) => {

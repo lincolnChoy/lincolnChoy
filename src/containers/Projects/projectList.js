@@ -1,10 +1,15 @@
 export default [
     {
         name: "Chime",
-        description: 'A messenging application developed in React. I also built a back-end server for this.',
+        brief: "A full-stack messenger web application.",
         thumbnail: "chime-web.jpg",
+        descriptions: ["A messenging application developed in React. I also built a back-end server for this."],
         tools: ["TypeScript","React, Redux", "NodeJS", "Express", "PostGreSQL"],
         links: [
+            {
+                url: "https://chimeapp.netlify.app",
+                name: "Website"
+            },
             {
                 url: "https://github.com/lincolnChoy/Chime-Front-End",
                 name: "GitHub - React"
@@ -14,90 +19,86 @@ export default [
                 name: "GitHub - Node back-end"
             }
         ],
-        status: "In progress",
-        screenshots: [],
-        brief: "A full-stack messenger application for desktop and mobile."
+        screenshots: []
     },
     {
         name: "Chime - Mobile app",
-        description: 'A messenging application developed in React-Native. I also built a back-end server for this.',
-        thumbnail: "chime-web.jpg",
+        brief: "A full-stack messenger mobile application.",
+        thumbnail: "chime-mobile.jpg",
+        descriptions: ["A messenging application developed in React-Native. I also built a back-end server for this."],
         tools: ["JavaScript", "React Native, Redux", "NodeJS", "Express", "PostGreSQL"],
         links: [
             {
                 url: "https://github.com/lincolnChoy/Chime",
                 name: "GitHub - React Native"
+            },
+            {
+                url: "https://github.com/lincolnChoy/Chime_API_V2",
+                name: "GitHub - Node back-end"
             }
         ],
-        status: "In progress",
-        screenshots: [],
-        brief: "A full-stack messenger application for desktop and mobile."
-    },
-    {
-        name: "lincoln.choy",
-        description: "This portfolio website is also something I made myself",
-        thumbnail: "portfolio.jpg",
-        features: ["Developed in React JS."],
-        tools: ["React"],
-        links: [{
-            url: "https://github.com/lincolnChoy/Portfolio",
-            name: "GitHub"
-        }],
-        status: "Complete",
-        screenshots: [],
-        brief: "This portfolio website is also something I made myself."
+        screenshots: []
     },
     {
         name: "Pacamana Jones",
-        description: 
-        `University project. A parody of a timeless classic, Pacman. Developed in Java using the JavaFX library with fellow student Henry Shen.
-        This version features an Indiana-Jones themed storyline in which the player must collect artifacts and avoid the ghosts in the maze. 
-        `,
+        brief: "A parody of the timeless arcade game, Pacman.",
         thumbnail: "pacman.jpg",
-        features: ["Single-player", "Multi-player", "Desktop application"],
+        descriptions: [
+            "A parody of a timeless classic, Pacman. Developed in Java using the JavaFX library with fellow programmer Henry Shen.",
+            "This version features an Indiana-Jones themed storyline in which the player must collect artifacts and avoid the ghosts in the maze."
+        ],
         tools : ["Java", "JavaFX", "Audacity", "Photoshop"],
         links: [{
             url: "https://github.com/lincolnChoy/Pacamana-Jones",
             name: "GitHub"
         }],
-        status: "Complete",
-        screenshots: ["https://i.imgur.com/g2sZMSI.png"],
-        brief: "A parody of the timeless arcade game, Pacman."
+        screenshots: ["https://i.imgur.com/g2sZMSI.png"]
     },
     {
         name: "SwimmyFishy",
-        description: "A spin-off on the classic FlappyBird game developed on Android. Developed with fellow student Henry Shen.",
+        brief: "A spin-off on the classic FlappyBird game developed on Android.",
         thumbnail: "swimmyfishy.jpg",
-        features: ["Developed in Java.", "All visual assets were self made."],
-        tools: [
-            "Android Studio",
-            "Java",
-            "Photoshop"
+        descriptions: [
+            "A spin-off on the classic FlappyBird game developed on Android using Java. Developed with fellow programmer Henry Shen.",
+            "All visual assets were self made."
         ],
+        tools: [ "Android Studio", "Java", "Photoshop" ],
         links: [{
             url: "https://github.com/lincolnChoy/SwimmyFishy",
             name: "GitHub"
         }],
-        status: "Complete",
-        screenshots: ["https://i.imgur.com/ecGV17i.png"],
-        brief: "A spin-off on the classic FlappyBird game developed on Android."
+        screenshots: ["https://i.imgur.com/ecGV17i.png"]
     },
     {
-        name: "Pong game",
-        description: "University project. A VHDL implementation of a classic arcade game, Pong. Developed with fellow student Henry Shen.",
+        name: "Pong",
+        brief: "A VHDL implementation of a classic arcade game, Pong.",
         thumbnail: "pong.jpg",
-        features: ["Developed in a hardware description language."],
-        tools: [
-            "VHDL",
-            "Quartus",
-            "Cyclone V FPGA board"
+        descriptions: [
+            "A VHDL implementation of a classic arcade game, Pong. Developed with fellow programmer Henry Shen.", 
+            "It was developed on the Cyclone V FPGA board which has a VGA interface to display the graphics.",
+            `As there is no operating system on this board, there are no screenshots available for this game. The preview
+            image shown for this project is a very close depiction of our game.
+            `
         ],
+        tools: [ "VHDL", "Quartus", "Cyclone V FPGA board" ],
         links: [{
             url: "https://github.com/lincolnChoy/Pong-game",
             name: "GitHub"
         }],
-        status: "Complete",
-        screenshots: [],
-        brief: "A VHDL implementation of a classic arcade game, Pong."
+        screenshots: []
     },
+    {
+        name: "lincoln.choy",
+        brief: "This portfolio website is also something I made myself.",
+        thumbnail: "portfolio.jpg",
+        descriptions: [
+            "Developed in React. No npm packages were used for any of the animations, it was all done in purely css."
+        ],
+        tools: ["React"],
+        links: [{
+            url: "https://github.com/lincolnChoy/Portfolio",
+            name: "GitHub"
+        }],
+        screenshots: []
+    }
 ]
