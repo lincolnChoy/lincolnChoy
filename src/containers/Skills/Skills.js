@@ -1,6 +1,6 @@
 import React from 'react'
+import ExperienceBar from '../../components/molecules/ExperienceBar/ExperienceBar'
 import { getSpanArray } from '../../utility'
-import ExperienceBar from './ExperienceBar/ExperienceBar'
 import skillsList from './skillList'
 import './Skills.scss'
 

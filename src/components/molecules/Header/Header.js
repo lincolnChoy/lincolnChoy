@@ -1,15 +1,15 @@
 import cx from 'classnames'
 import React from 'react'
+import GitHubLogo from '../../atoms/svg/github'
+import Home from '../../atoms/svg/home'
+import LinkedInLogo from '../../atoms/svg/linkedin'
+import Mail from '../../atoms/svg/mail'
+import Menu from '../../atoms/svg/menu'
+import MenuBack from '../../atoms/svg/menuBack'
+import Person from '../../atoms/svg/person'
+import Projects from '../../atoms/svg/projects'
+import Skills from '../../atoms/svg/skills'
 import './Header.scss'
-import GitHubLogo from './svg/github'
-import Home from './svg/home'
-import LinkedInLogo from './svg/linkedin'
-import Mail from './svg/mail'
-import Person from './svg/person'
-import Projects from './svg/projects'
-import Skills from './svg/skills'
-import Menu from './svg/menu'
-import CloseMenu from './svg/backarrow'
 
 class Header extends React.Component {
   state = {
@@ -70,7 +70,7 @@ class Header extends React.Component {
         <div className="menu-icon" onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
           {
             this.state.menuOpen ? 
-              <CloseMenu />
+              <MenuBack />
               :
               <Menu />
           }

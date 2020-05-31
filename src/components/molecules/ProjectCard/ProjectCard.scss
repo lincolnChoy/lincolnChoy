@@ -1,21 +1,21 @@
 .project-card {
   background-color: transparent;
   width: 300px;
-  height: 250px;
+  height: 238px;
   background: #777;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
+  margin: 0.5rem;
   text-align: center;
 
   @media (max-width: 1200px) {
-    margin: 8px;
+    margin: 0.45rem;
     height: 225px;
   }
 
   @media (max-width: 700px) {
-    margin: 5px 5px 5px 8px;
+    margin: 0.4rem;
   }
 }
 
@@ -46,24 +46,6 @@
 
   .content-wrapper {
     display: none;
-  }
-
-  button {
-    height: 3rem;
-    border: 1px solid lightskyblue;
-    border-radius: 5px;
-
-    color: skyblue;
-    background-color: transparent;
-    outline: none;
-    font-family: OpenSans;
-    transition: .5s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-      color: white;
-      background-color: skyblue;
-    }
   }
 }
 

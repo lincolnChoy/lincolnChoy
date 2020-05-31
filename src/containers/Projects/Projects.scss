@@ -1,49 +1,55 @@
-.projects-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  .main-section {
-    width: 970px;
-    text-align: center;
-
-    h1 {
-      // animation-duration: 1.5s;
-      // animation-fill-mode: both;
-      // animation-iteration-count: 1;
-      // animation-name: rubberBandWordUp;
-    }
-
-    .project-card-list {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      width: 100%;
-      margin-bottom: 2rem;
-    }
-
-    @media (max-width: 1600px) {
+.page-wrapper {
+  .projects-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    .main-section {
+      width: 970px;
+  
+      h1 {
+        text-align: center;
+        // animation-duration: 1.5s;
+        // animation-fill-mode: both;
+        // animation-iteration-count: 1;
+        // animation-name: rubberBandWordUp;
+      }
+      
       .project-card-list {
-        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+  
+      @media (max-width: 1600px) {
+        .project-card-list {
+          justify-content: center;
+        }
+      }
+  
+      @media (max-width: 1200px) {
+        width: 650px;
+      }
+  
+      @media (max-width: 700px) {
+        width: 350px;
+  
+        .project-card-list {
+          max-height: 85vh;
+          overflow-y: scroll;
+        }
       }
     }
 
-    @media (max-width: 1200px) {
-      width: 650px;
-    }
-
-    @media (max-width: 700px) {
-      width: 350px;
-
-      .project-card-list {
-        max-height: 88vh;
-        overflow-y: scroll;
-      }
+    @media (max-width: 600px) {
+      margin-left: 2rem;
     }
 
     @media (max-width: 400px) {
-      margin-left: 2rem;
+      margin-left: 1.5rem;
     }
   }
 }

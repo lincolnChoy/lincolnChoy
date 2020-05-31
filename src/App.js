@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.scss'
-import Header from './components/Header/Header'
+import Header from './components/molecules/Header/Header'
 import AboutMe from './containers/AboutMe/AboutMe'
 import Home from './containers/Home/Home'
 import Projects from './containers/Projects/Projects'
