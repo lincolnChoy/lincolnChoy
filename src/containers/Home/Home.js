@@ -5,7 +5,7 @@ import './Home.scss'
 class Home extends React.Component {
   render() {
     return (
-      <div className="wrapper home-wrapper scene_element scene_element--fadeinright">
+      <div className="wrapper home-wrapper scene_element scene_element--fadein">
         <div className="description-container">
             <h1>{getSpanArray("Hi,")}</h1>
             <h1>{getSpanArray("I’m Lincoln,")}</h1>

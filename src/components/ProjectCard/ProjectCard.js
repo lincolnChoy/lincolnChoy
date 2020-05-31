@@ -3,18 +3,18 @@ import './ProjectCard.scss'
 
 class ProjectCard extends React.Component {
   render() {
-    const { project } = this.props
+    const { onClick, project } = this.props
 
     return (
       <div className="project-card">
         <div className="project-card-layer-1">
           <h2>{project.name}</h2>
-          <img src={require(`../../assets/thumbnails/${project.thumbnail}`)} />
+          <img alt="thumbnail" src={require(`../../assets/thumbnails/${project.thumbnail}`)} />
         </div>
         <div className="project-card-layer-2">
           <div className="content-wrapper">
             <h3>{project.brief}</h3>
-            <button>Learn more</button>
+            <button onClick={() => onClick(project) }>Learn more</button>
           </div>
         </div>
       </div>

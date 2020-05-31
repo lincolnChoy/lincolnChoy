@@ -1,22 +1,28 @@
 import React from 'react'
-import ProjectCard from '../../components/ProjectCard/ProjectCard'
-import { getSpanArray } from '../../utility'
+import CardList from './CardList/CardList'
+import Project from './Project/Project'
 import projectsList from './projectList'
 import './Projects.scss'
 
 class Projects extends React.Component {
-  render() {
-    const projectCards = projectsList.map((project, index) => {
-      return <ProjectCard project={project} key={index}/>
-    })
+  state = {
+    // project: null,
+    project: projectsList[0]
+  }
 
+  displayProject = (project) => {
+    this.setState({ project })
+  }
+
+  render() {
     return (
       <div className="wrapper projects-wrapper scene_element scene_element--fadeindown">
         <div className="main-section">
-          <h1>{getSpanArray("Projects")}</h1>
-          <div className="project-card-list">
-            {projectCards}
-          </div>
+          {
+            this.state.project === null
+            ? <CardList displayProject={this.displayProject}/>
+            : <Project project={this.state.project}/>
+          }
         </div>
       </div>
     )
