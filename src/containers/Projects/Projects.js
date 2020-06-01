@@ -1,13 +1,11 @@
 import React from 'react'
 import CardList from '../../components/molecules/CardList/CardList'
 import SingleProject from '../SingleProject/SingleProject'
-import projectsList from './projectList'
 import './Projects.scss'
 
 class Projects extends React.Component {
   state = {
     project: null
-    // project: projectsList[0]
   }
 
   displayProject = (project) => {
