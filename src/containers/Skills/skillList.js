@@ -8,7 +8,7 @@ export default [
     value: 90
   },
   {
-    skill: 'CSS/SCSS',
+    skill: 'CSS',
     value: 90
   },
   {
@@ -18,10 +18,6 @@ export default [
   {
     skill: 'Java',
     value: 85
-  },
-  {
-    skill: 'Redux',
-    value: 80
   },
   {
     skill: 'Angular',

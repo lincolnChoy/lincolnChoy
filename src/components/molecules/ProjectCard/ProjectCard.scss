@@ -17,6 +17,11 @@
   @media (max-width: 700px) {
     margin: 0.4rem;
   }
+
+  @media (max-width: 350px) {
+    width: 250px;
+    height: 200px;
+  }
 }
 
 .project-card-layer-1 {

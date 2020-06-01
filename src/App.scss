@@ -58,24 +58,27 @@
       }
     }
 
-    p {
-      font-size: 1.2rem;
     
-      @media (max-width: 800px) {
-        font-size: 1.1rem;
-      }
-    
-      @media (max-width: 600px) {
-        font-size: 1.0rem;
-      }
+    font-size: 1.2rem;
+  
+    @media (max-width: 800px) {
+      font-size: 1.1rem;
+    }
+  
+    @media (max-width: 600px) {
+      font-size: 1.0rem;
+    }
 
-      @media (max-width: 600px) {
-        font-size: 0.9rem;
-      }
+    @media (max-width: 600px) {
+      font-size: 0.9rem;
+    }
 
-      @media (max-width: 400px) {
-        font-size: 0.8rem;
-      }
+    @media (max-width: 400px) {
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 350px) {
+      font-size: 0.7rem;
     }
 
     .bounce {
@@ -105,13 +108,17 @@
     }
   
     @media (max-width: 800px) {
-      margin: 2rem 0 0 3.5rem;
+      margin: 2rem 0 0 5rem;
+    }
+
+    @media (max-width: 350px) {
+      margin-left: 4rem;
     }
   }
 }
 
 button {
-  height: 3rem;
+  padding: 0.8rem;
   border: 1px solid lightskyblue;
   border-radius: 5px;
 
@@ -125,6 +132,10 @@ button {
   &:hover {
     color: white;
     background-color: skyblue;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0.5rem;
   }
 }
 

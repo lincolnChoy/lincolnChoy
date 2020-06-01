@@ -95,6 +95,10 @@
       cursor: pointer;
       transform: translateX(100%);
     }
+
+    .social-media {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -109,3 +113,36 @@
     left: -0.8rem;
   }
 }
+
+@media (max-width: 350px) {
+  .app-header {
+    width: 1.5rem;
+
+    .menu-icon {
+      left: -2rem;
+
+      svg {
+        width: 30px;
+      }
+    }
+
+    .icon-container {
+      .icon-wrapper {
+        margin-top: 1rem;
+
+        svg {
+          width: 25px;
+        }
+      }
+    }
+  }
+  
+  .menu-open {
+    width: 3rem;
+
+    .menu-icon {
+      left: -0.8rem;
+    }
+  }
+}
+

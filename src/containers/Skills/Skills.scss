@@ -20,7 +20,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
       padding-top: 1rem;
 
       .text-section {
@@ -41,8 +40,11 @@
         flex-direction: column;
         justify-content: flex-start;
         .text-section {
-          // display: none;
           width: 95%;
+        }
+
+        .hide-me-2 {
+          display: none;
         }
 
         .graph-section {
@@ -56,8 +58,19 @@
       }
     }
 
+    @media (max-width: 800px) {
+      .sub-content-container {
+        .graph-section {
+          margin-top: 1rem;
+        }
+      }
+    }
+
     @media (max-width: 400px) {
-      width: 88%;
+      width: 93%;
+      .hide-me-1 {
+        display: none;
+      }
     }
   }
 }

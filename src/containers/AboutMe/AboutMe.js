@@ -19,7 +19,7 @@ class AboutMe extends React.Component {
             </p>
             <p>
               In my spare time, I enjoy working on personal web and game projects. When I'm not doing that, I usually spend my time 
-              browsing the web and playing games. Oh, and running, going out for jogs is fun too, I guess.
+              browsing the web and playing games.
             </p>
           </div>
         </div>
