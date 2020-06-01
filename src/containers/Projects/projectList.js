@@ -3,7 +3,10 @@ export default [
         name: "Chime",
         brief: "A full-stack messenger web application.",
         thumbnail: "chime-web.jpg",
-        descriptions: ["A messenging application developed in React. I also built a back-end server for this."],
+        descriptions: [
+            "A messenging application developed in React. I also built a back-end server for this.",
+            "The application includes messaging functionality, and the ability to view other people's profiles and edit their own."
+        ],
         tools: ["TypeScript","React, Redux", "NodeJS", "Express", "PostGreSQL"],
         links: [
             {
@@ -25,7 +28,10 @@ export default [
         name: "Chime - Mobile app",
         brief: "A full-stack messenger mobile application.",
         thumbnail: "chime-mobile.jpg",
-        descriptions: ["A messenging application developed in React-Native. I also built a back-end server for this."],
+        descriptions: [
+            "A messenging application developed in React Native. It uses the same back-end server used in my Chime web application.",
+            "he application includes messaging functionality, and the ability to view other people's profiles and edit their own."
+        ],
         tools: ["JavaScript", "React Native, Redux", "NodeJS", "Express", "PostGreSQL"],
         links: [
             {

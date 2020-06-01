@@ -57,9 +57,9 @@ class Project extends React.Component {
           <div className="links">
             {this.getLinks()}
           </div>
-          <div className="screenshots">
+          {/* <div className="screenshots">
             {this.getScreenshots()}
-          </div>
+          </div> */}
         </div>
       </div>
     )
