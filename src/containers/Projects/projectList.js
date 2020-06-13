@@ -94,7 +94,7 @@ export default [
         screenshots: []
     },
     {
-        name: "lincoln.choy",
+        name: "lincolnchoy.com",
         brief: "This portfolio website is also something I made myself.",
         thumbnail: "portfolio.jpg",
         descriptions: [
