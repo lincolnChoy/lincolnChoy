@@ -1,68 +1,66 @@
-import React from 'react';
-import BackArrow from '../../components/atoms/svg/backarrow';
-import { getSpanArray } from '../../utility';
-import './SingleProject.scss';
+import React from 'react'
+import { Link, useParams } from 'react-router-dom'
+import BackArrow from '../../components/atoms/svg/backarrow'
+import { getSpanArray } from '../../utility'
+import NotFound from '../NotFound/NotFound'
+import projectList from '../Projects/projectList'
+import './SingleProject.scss'
 
-class Project extends React.Component {
-  getDescriptions = () => {
-    let content = this.props.project.descriptions.map((description, index) => (
-      <p key={index}>{description}</p>
-    ))
-    
-    return content
-  }
 
-  getTools = () => {
-    let content = this.props.project.tools.map((tool, index) => (
-      <li key={index}>{tool}</li>
-    ))
-    
-    return <ul>{content}</ul>
-  }
+const getDescriptions = (project) => {
+  let content = project.descriptions.map((description, index) => (
+    <p key={index}>{description}</p>
+  ))
+  
+  return content
+}
 
-  getLinks = () => {
-    let content = this.props.project.links.map((link, index) => (
-      <button key={index} onClick={() => window.open(link.url, '_blank')}>{link.name}</button>
-    ))
+const getTools = (project) => {
+  let content = project.tools.map((tool, index) => (
+    <li key={index}>{tool}</li>
+  ))
+  
+  return <ul>{content}</ul>
+}
 
-    return content
-  }
+const getLinks = (project) => {
+  let content = project.links.map((link, index) => (
+    <button key={index} onClick={() => window.open(link.url, '_blank')}>{link.name}</button>
+  ))
 
-  getScreenshots = () => {
-    let content = this.props.project.screenshots.map((link, index) => (
-      <img key={index} alt="project_img" src={link} />
-    ))
+  return content
+}
 
-    return content
-  }
-
-  render() {
-    const { project } = this.props
-
+const Project = () => {
+  const { projectName } = useParams()
+  const project = projectList.find(project => project.name === projectName)
+  
+  if (project) {
     return (
       <div className="wrapper single-project-wrapper scene_element scene_element--fadeinright">
         <div className="main-content">
           <div className="header-content">
-            <div className="icon-wrapper" onClick={() => this.props.resetProject()}>
-              <BackArrow />
-            </div>
+            <Link to="/projects">
+              <div className="icon-wrapper">
+                <BackArrow />
+              </div>
+            </Link>
             <h1>{getSpanArray(project.name)}</h1>
           </div>
-          <p>{this.getDescriptions()}</p>
-
+          {getDescriptions(project)}
           <h3>Tools used</h3>
           <div className="tools">
-            {this.getTools()}
+            {getTools(project)}
           </div>
           <div className="links">
-            {this.getLinks()}
+            {getLinks(project)}
           </div>
-          {/* <div className="screenshots">
-            {this.getScreenshots()}
-          </div> */}
         </div>
       </div>
     )
+  }
+  else {
+    return <NotFound />
   }
 }
 

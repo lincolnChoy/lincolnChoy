@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ProjectCard.scss'
 
 class ProjectCard extends React.Component {
   render() {
-    const { displayProject, project } = this.props
+    const { baseUrl, project } = this.props
 
     return (
       <div className="project-card">
@@ -14,7 +15,9 @@ class ProjectCard extends React.Component {
         <div className="project-card-layer-2">
           <div className="content-wrapper">
             <h3>{project.brief}</h3>
-            <button onClick={() => displayProject(project) }>Learn more</button>
+            <Link to={`${baseUrl}/${project.name}`}>
+              <button>Learn more</button>
+            </Link>
           </div>
         </div>
       </div>

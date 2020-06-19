@@ -1,35 +1,29 @@
 import React from 'react'
+import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import CardList from '../../components/molecules/CardList/CardList'
-import SingleProject from '../SingleProject/SingleProject'
+import Project from '../SingleProject/SingleProject'
 import './Projects.scss'
 
-class Projects extends React.Component {
-  state = {
-    project: null
-  }
+const Projects = () => {
+  let match = useRouteMatch()
 
-  displayProject = (project) => {
-    this.setState({ project })
-  }
-
-  resetProject = () => {
-    this.setState({ project: null })
-  }
-
-  render() {
-    if (this.state.project === null) {
-      return (
+  return (
+    <Switch>
+      <Route exact path={`${match.path}/:projectName`}>
+        <Project />
+      </Route>
+      <Route exact path={match.path}>
         <div className="wrapper projects-wrapper scene_element scene_element--fadeindown">
           <div className="main-section">
-            <CardList displayProject={this.displayProject}/>
+            <CardList baseUrl={match.url}/>
           </div>
         </div>
-      )
-    }
-    else {
-      return <SingleProject project={this.state.project} resetProject={this.resetProject} />
-    }
-  }
+      </Route>
+      <Route path="*">
+        <Project />
+      </Route>
+    </Switch>
+  )
 }
 
 export default Projects
