@@ -12,6 +12,10 @@
 
   .icon-container {
     transition: 0.33s ease-in-out;
+
+    a {
+      outline: none;
+    }
   }
 
   .social-media {
