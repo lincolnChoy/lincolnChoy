@@ -6,7 +6,7 @@ import ProjectCard from '../ProjectCard/ProjectCard'
 class CardList extends React.Component {
   render() {
     const projectCards = projectsList.map((project, index) => {
-      return <ProjectCard project={project} key={index} displayProject={this.props.displayProject}/>
+      return <ProjectCard baseUrl={this.props.baseUrl} project={project} key={index} />
     })
 
     return (
@@ -16,7 +16,6 @@ class CardList extends React.Component {
           {projectCards}
         </div>
       </React.Fragment>
-
     )
   }
 }

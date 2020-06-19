@@ -1,5 +1,6 @@
 import cx from 'classnames'
 import React from 'react'
+import { withRouter } from "react-router-dom"
 import GitHubLogo from '../../atoms/svg/github'
 import Home from '../../atoms/svg/home'
 import LinkedInLogo from '../../atoms/svg/linkedin'
@@ -10,6 +11,7 @@ import Person from '../../atoms/svg/person'
 import Projects from '../../atoms/svg/projects'
 import Skills from '../../atoms/svg/skills'
 import './Header.scss'
+import HeaderIcon from './HeaderIcon'
 
 class Header extends React.Component {
   state = {
@@ -37,34 +39,10 @@ class Header extends React.Component {
         "menu-open": this.state.menuOpen
       })}>
         <div className="icon-container">
-          <div className={cx({
-            "icon-wrapper": true,
-            "active-icon": this.props.activeRoute === 'home'
-          })} 
-            onClick={() => this.props.routeTo('home')}>
-            <Home />
-          </div>
-          <div className={cx({
-            "icon-wrapper": true,
-            "active-icon": this.props.activeRoute === 'about-me'
-          })} 
-            onClick={() => this.props.routeTo('about-me')}>
-            <Person />
-          </div>
-          <div className={cx({
-            "icon-wrapper": true,
-            "active-icon": this.props.activeRoute === 'skills'
-          })} 
-            onClick={() => this.props.routeTo('skills')}>
-            <Skills />
-          </div>
-          <div className={cx({
-            "icon-wrapper": true,
-            "active-icon": this.props.activeRoute === 'projects'
-          })} 
-            onClick={() => this.props.routeTo('projects')}>
-            <Projects />
-          </div>
+          <HeaderIcon icon={<Home/>} pathname="/" />
+          <HeaderIcon icon={<Person/>} pathname="/about" />
+          <HeaderIcon icon={<Skills/>} pathname="/skills" />
+          <HeaderIcon icon={<Projects/>} pathname="/projects" />
         </div>
 
         <div className="menu-icon" onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
@@ -98,4 +76,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default withRouter(Header)
