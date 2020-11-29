@@ -16,16 +16,16 @@ export default [
     value: 90
   },
   {
-    skill: 'Java',
-    value: 85
+    skill: '.NET',
+    value: 80
   },
   {
     skill: 'Angular',
-    value: 75
+    value: 80
   },
   {
-    skill: 'C++',
-    value: 70
+    skill: 'Java',
+    value: 80
   },
   {
     skill: 'Jest',
@@ -33,6 +33,6 @@ export default [
   },
   {
     skill: 'SQL',
-    value: 65
+    value: 70
   },
 ]
